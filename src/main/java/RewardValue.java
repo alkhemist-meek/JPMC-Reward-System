@@ -29,12 +29,12 @@ public class RewardValue {
     }
 
     // Method to convert cash to miles
-    private double convertCashToMiles(double cashValue) {
-        return cashValue / MILES_TO_CASH_CONVERSION_RATE;
+    public static double convertCashToMiles(double cashValue) {
+        return cashValue / 0.0035;
     }
 
     // Method to convert miles to cash
-    private double convertMilesToCash(double milesValue) {
-        return milesValue * MILES_TO_CASH_CONVERSION_RATE;
+    public static double convertMilesToCash(double milesValue) {
+        return milesValue * 0.0035;
     }
 }
